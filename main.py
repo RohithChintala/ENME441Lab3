@@ -1,4 +1,4 @@
-import PCF8591
+from PCF8591 import PCF8591
 
 class Joystick:
   def __init__(self, bus, address):
