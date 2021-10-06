@@ -10,8 +10,13 @@ class Joystick:
     def getY():
       return(read(1))
 
-J = Joystick()
-print(J.getX())
-sleep(0.5)
-print(J.getY())
-sleep(0.5)
+
+try:
+  while 1:
+    J = Joystick()
+    print(J.getX())
+    sleep(0.5)
+    print(J.getY())
+    sleep(0.5)
+except KeyboardInterrupt:
+ print('\nExiting')
