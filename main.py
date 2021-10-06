@@ -1,4 +1,5 @@
 from PCF8591 import PCF8591
+from time import sleep
 
 class Joystick:
   def __init__(self, address):
