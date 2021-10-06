@@ -1,8 +1,8 @@
 from PCF8591 import PCF8591
 
 class Joystick:
-  def __init__(self, bus, address):
-    self.pcf8591 = PCF8591(bus, address)
+  def __init__(self, address):
+    self.pcf8591 = PCF8591( address)
     def getX():
       #self.p =  adc.address
       return(self.pcf8591.read(0))
@@ -13,7 +13,7 @@ class Joystick:
 
 try:
   while 1:
-    J = Joystick(1, 0x48)
+    J = Joystick( 0x48)
     print(J.getX())
     sleep(0.5)
     print(J.getY())
