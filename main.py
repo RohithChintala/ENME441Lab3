@@ -12,9 +12,9 @@ class Joystick:
 try:
   while 1:
     J = Joystick(0x48)
-    print(J.getX())
+    print(J.getX)
     sleep(0.5)
-    print(J.getY())
+    print(J.getY)
     sleep(0.5)
 except KeyboardInterrupt:
  print('\nExiting')
