@@ -2,7 +2,7 @@
 from time import sleep
 import smbus
 
-
+''''
 class PCF8591:
 
   def __init__(self,address):
@@ -22,7 +22,7 @@ class PCF8591:
           self.bus.write_byte_data(self.address, 0x40, int(val))
       except Exception as e:
           print ("Error: Device address: 0x%2X \n%s" % (self.address,e))
-
+'''
 class Joystick:
   def __init__(self, address):
     self.adc = PCF8591(address)
