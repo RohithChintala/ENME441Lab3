@@ -7,13 +7,13 @@ class Joystick:
       self.p =  adc.address
       return(self.PCF8591.read(0))
     def getY():
-      self.q = adc.addre
+      self.q = adc.address
       return(self.PCF8591.read(1))
 
 
 try:
   while 1:
-    J = Joystick(1, 0x48)
+    J = Joystick(1, 0x48, 0, 1)
     print(J.getX())
     sleep(0.5)
     print(J.getY())
