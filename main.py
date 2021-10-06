@@ -25,7 +25,7 @@ class PCF8591:
 
 class Joystick:
   def __init__(self,):
-    self.adc = PCF8591(address)
+    self.adc = PCF8591(bus, address)
     def getX():
       return(read(0))
     def getY():
