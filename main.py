@@ -27,9 +27,9 @@ class Joystick:
   def __init__(self, address):
     self.adc = PCF8591(address)
   def getX(self):
-    return(self.PCF8591.read(0))
+    return(self.adc.read(0))
   def getY(self):
-    return(self.PCF8591.read(1))
+    return(self.adc.read(1))
 
 
 try:
