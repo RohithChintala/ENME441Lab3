@@ -1,4 +1,4 @@
-#from PCF8591 import PCF8591
+from PCF8591 import PCF8591
 from time import sleep
 import smbus
 
