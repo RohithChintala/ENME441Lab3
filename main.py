@@ -2,13 +2,13 @@ import PCF8591
 
 class Joystick:
   def __init__(self, bus, address, p, q):
-    #self.adc = PCF8591(bus, address)
+    self.adc = PCF8591()
     def getX():
-      self.p =  adc.address
-      return(self.PCF8591.read(0))
+      #self.p =  adc.address
+      return(self.adc.read(0))
     def getY():
-      self.q = adc.address
-      return(self.PCF8591.read(1))
+      #self.q = adc.address
+      return(self.adc.read(1))
 
 
 try:
