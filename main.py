@@ -4,9 +4,9 @@ class Joystick:
   def __init__(self, bus, address):
     self.adc = PCF8591(bus, address)
     def getX():
-      return(PCF8591.read(0))
+      return(adc.read(0))
     def getY():
-      return(PCF8591.read(1))
+      return(adc.read(1))
 
 
 try:
