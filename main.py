@@ -1,7 +1,7 @@
 from PCF8591 import PCF8591
 
 class Joystick:
-  def __init__(self, bus, address):
+  def __init__(self, bus, address, adc):
     self.adc = PCF8591(bus, address)
     def getX():
       #self.p =  adc.address
