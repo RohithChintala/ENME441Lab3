@@ -13,7 +13,7 @@ class Joystick:
 
 try:
   while 1:
-    J = Joystick(1, 0x48, 0, 1)
+    J = Joystick(1, 0x48)
     print(J.getX())
     sleep(0.5)
     print(J.getY())
