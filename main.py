@@ -15,8 +15,7 @@ try:
   while 1:
     J = Joystick(0x48)
     #print(J.getX(), J.getY())
-    
-    print('%d, %d' % (J.getX(),J.getY())
+    print('%d, %d' % (J.getX(),J.getY()))
     sleep(0.5)
 except KeyboardInterrupt:
  print('\nExiting')
