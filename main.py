@@ -16,7 +16,7 @@ try:
     J = Joystick(0x48)
     #print(J.getX(), J.getY())
     #print('%d, %d' % (J.getX(),J.getY()))
-    print("{:>15}{:>15}".format(J.getX(), J.getY()))
+    print("{:>4}{:>4}".format(J.getX(), J.getY()))
     sleep(0.1)
 except KeyboardInterrupt:
  print('\nExiting')
