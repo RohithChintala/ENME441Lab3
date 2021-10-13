@@ -7,7 +7,7 @@ class Joystick: #creates joystick class
     self.adc = PCF8591(address) #calls PCF8591 class by composition
   def getX(self): #creates class method
     return(self.adc.read(0)) #returns adc read of address 0
-  def getY(self): #creates calss method
+  def getY(self): #creates class method
     return(self.adc.read(1)) #returns adc read of address 0
 
 
